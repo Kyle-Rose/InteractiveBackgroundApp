@@ -7,15 +7,26 @@
     <title>Interactive Background App — by Kyle Rose</title>
 </head>
 <body>
-    <header>
-        <h1>Interactive Background App</h1>
-        <p>By Kyle Rose</p>
-        <p>A simple interactive web app that lets users change the page background color with a button click. Built with HTML, CSS, and JavaScript to demonstrate DOM manipulation and event handling.</p>
-    </header>
 
     <main>
-        <h2>Press Button To Change Background Color</h2>
-        <button id="myButton">Click Me</button>
+        <div id="about">
+            <h1>Press Button To Change Background Color</h1>
+                <p>Click the buttons below to change the background color of the page.</p>
+                <p>Current Background Color: <span id="colorDisplay"></span></p>
+        </div>
+        <div id="buttonContainer">
+            <button id="redButton">Red</button>
+            <button id="greenButton">Green</button>
+            <button id="blueButton">Blue</button>
+            <button id="randomButton">Random Color</button>
+            <input type="color" id="colorPicker">
+            <button id="saveColorButton">Save Current Color</button>
+        </div>
+
+        <div id="savedColorsContainer">
+            <ul id="savedColorsList">
+            </ul>
+        </div>
     </main>
 
     <script src="script.js"></script>
